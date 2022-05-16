@@ -26,6 +26,11 @@ include 'entities/includes.php';
                 <p> Cognome Utente: <?php echo( $user2->surname) ?></p>
                 <p> Status: <?php echo( $user2->setSconto($user2->registration)) ?></p>
             </div>
+            <div class="col-6">
+                <p> Tipo di cibo: <?php echo( $crocchette->typeOfFood) ?></p>
+                <p> Animali: <?php echo( $crocchette->animal) ?></p>
+                <p> Prezzo: <?php echo( $crocchette->price) ?></p>
+            </div>
         </div>
     </div>
 
