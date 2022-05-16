@@ -10,7 +10,8 @@ class Food extends Product {
     public $price;
 
 
-    function __construct($_typeOfFood, $_animal, $_price){
+    function __construct($_category, $_typeOfFood, $_animal, $_price){
+        $this->category = $_category;
         $this->typeOfFood = $_typeOfFood;
         $this->animal = $_animal;
         $this->price = $_price;
@@ -18,6 +19,7 @@ class Food extends Product {
 
 }
 
-$crocchette = new Food('secco', 'Cani', '29,99');
+$crocchette = new Food('Cibo', 'secco', 'Cani', '29,99');
+
 
 ?>
