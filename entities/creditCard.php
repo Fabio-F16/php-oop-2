@@ -25,6 +25,15 @@ class CreditCard extends User {
             $this->checkCard = true;
         }
     }
+
+    public function canBuy(){
+
+        if($this->checkCard){
+            return 'Puoi completare il pagamento!';
+        }else{
+            return 'Carta scaduta!';
+        }
+    }
 }
 
 ?>

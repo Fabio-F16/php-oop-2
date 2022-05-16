@@ -10,7 +10,7 @@ class User{
     private $passwords;
     protected $sconto = 0;
     public $registration = false;
-    protected $creditCard;
+    // protected $creditCard;
 
 
     function __construct($_name, $_surname, $_userID){
@@ -27,14 +27,7 @@ class User{
         }
     }
     
-    public function canBuy(){
-
-        if($this->creditCard->checkCard){
-            return 'Puoi completare il pagamento!';
-        }else{
-            return 'Carta scaduta!';
-        }
-    }
+  
 }
 
 ?>
