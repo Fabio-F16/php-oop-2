@@ -1,6 +1,6 @@
 <?php
 
-class CreditCard extends user {
+class CreditCard extends User {
 
 
     protected $type;
@@ -8,6 +8,7 @@ class CreditCard extends user {
     protected $owner;
     protected $expireDate;
     private $cvc;
+    public $checkCard;
 
 
     function __construct($_type, $_number, $_owner, $_expireDate){
@@ -15,6 +16,14 @@ class CreditCard extends user {
         $this->number = $_number;
         $this->owner = $_owner;
         $this->expireDate = $_expireDate;
+    }
+    
+    public function checkExpired(){
+        if($this->expireDate > date('Y-m-d H:i:s')){
+            $this->checkCard = false;
+        }else{
+            $this->checkCard = true;
+        }
     }
 }
 
