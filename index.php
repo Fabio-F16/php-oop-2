@@ -28,10 +28,21 @@ include 'entities/includes.php';
                 <p> Status: <?php echo( $user2->setSconto($user2->registration)) ?></p>
                 <p> Validità carta: <?php echo( $user2->checkExpired()) ?></p>
             </div>
+
+            <div class="col-12">
+            <p> <?php var_dump($user1) ?></p>
+            </div>
             <div class="col-6">
-                <p> Tipo di cibo: <?php echo( $crocchette->typeOfFood) ?></p>
+                <p> Tipo di articolo: <?php echo( $crocchette->category) ?></p>
+                <p> Tipo di <?php echo( $crocchette->category) ?>: <?php echo( $crocchette->typeOfFood) ?></p>
                 <p> Animali: <?php echo( $crocchette->animal) ?></p>
                 <p> Prezzo: <?php echo( $crocchette->price) ?></p>
+            </div>
+            <div class="col-6">
+                <p> Tipo di articolo: <?php echo( $osso->category) ?></p>
+                <p> Tipo di <?php echo( $osso->category) ?>: <?php echo( $osso->animal) ?></p>
+                <p> Animali: <?php echo( $osso->material) ?></p>
+                <p> Prezzo: <?php echo( $osso->price) ?></p>
             </div>
         </div>
     </div>
@@ -48,4 +59,10 @@ include 'entities/includes.php';
 ?>
 
 </body>
+<style>
+    .col-6{
+        margin-top:50px;
+        border: 1px solid black;
+    }
+</style>
 </html>
