@@ -11,7 +11,7 @@ include 'entities/includes.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
+    <title>php-oop-2</title>
 </head>
 <body>
     <div class="container">
@@ -41,7 +41,8 @@ include 'entities/includes.php';
             <div class="col-6">
                 <p> Tipo di articolo: <?php echo( $osso->category) ?></p>
                 <p> Tipo di <?php echo( $osso->category) ?>: <?php echo( $osso->animal) ?></p>
-                <p> Animali: <?php echo( $osso->material) ?></p>
+                <p> Forma: <?php echo( $osso->shape) ?></p>
+                <p> Materiale: <?php echo( $osso->material) ?></p>
                 <p> Prezzo: <?php echo( $osso->price) ?></p>
             </div>
         </div>
