@@ -31,8 +31,6 @@ class User{
         }
     }
 }
-$user1 = new User('Antonio', 'Falcone', 'xxx', true);
-$user2 = new User('Paola', 'Perego', '16280', false);
 
 
 

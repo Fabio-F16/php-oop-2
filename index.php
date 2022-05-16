@@ -20,11 +20,13 @@ include 'entities/includes.php';
                 <p> Nome Utente: <?php echo( $user1->name) ?></p>
                 <p> Cognome Utente: <?php echo( $user1->surname) ?></p>
                 <p> Status: <?php echo( $user1->setSconto($user1->registration)) ?></p>
+                <p> Validità carta: <?php echo( $user1->checkExpired()) ?></p>
             </div>
             <div class="col-6">
                 <p> Nome Utente: <?php echo( $user2->name) ?></p>
                 <p> Cognome Utente: <?php echo( $user2->surname) ?></p>
                 <p> Status: <?php echo( $user2->setSconto($user2->registration)) ?></p>
+                <p> Validità carta: <?php echo( $user2->checkExpired()) ?></p>
             </div>
             <div class="col-6">
                 <p> Tipo di cibo: <?php echo( $crocchette->typeOfFood) ?></p>
@@ -34,6 +36,12 @@ include 'entities/includes.php';
         </div>
     </div>
 
+    <?php
+// echo "Today is " . date("Y/m/d") . "<br>";
+// echo "Today is " . date("Y.m.d") . "<br>";
+// echo "Today is " . date("Y-m-d") . "<br>";
+// echo "Today is " . date("l");
+?>
 
 <?php 
 
