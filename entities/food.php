@@ -1,8 +1,8 @@
 <?php
+// include 'product.php';
+
 
 class Food extends Product {
-
-
     public $typeOfFood;
     public $animal;
     public $ingredient;

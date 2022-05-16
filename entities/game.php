@@ -1,7 +1,6 @@
 <?php
-
+// include 'product.php';
 class Game extends Product {
-
 
     public $material;
     public $animal;

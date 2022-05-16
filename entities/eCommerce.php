@@ -1,8 +1,6 @@
 <?php
 
 class Ecommerce{
-
-
     public $name;
     public $address;
     public $phoneNumber;
@@ -13,7 +11,6 @@ class Ecommerce{
     function __construct($_name){
         $this->name = $_name;
     }
-
 
 }
 
