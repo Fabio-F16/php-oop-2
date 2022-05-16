@@ -4,7 +4,7 @@
 
 class Food extends Product {
     public $typeOfFood;
-    public $animal;
+    // public $animal;
     public $ingredient;
     public $age;
     public $price;

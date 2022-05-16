@@ -3,7 +3,7 @@
 class Game extends Product {
 
     public $material;
-    public $animal;
+    // public $animal;
     public $shape;
     public $price;
 
