@@ -1,5 +1,5 @@
 <?php
-include ('entities/pruduct.php');
+include 'entities/includes.php';
 ?>
 
 
@@ -13,6 +13,9 @@ include ('entities/pruduct.php');
 </head>
 <body>
     
+<?php 
+
+?>
 
 </body>
 </html>
