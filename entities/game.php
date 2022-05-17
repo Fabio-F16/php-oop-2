@@ -3,9 +3,9 @@
 class Game extends Product {
 
     public $material;
-    // public $animal;
     public $shape;
-    public $price;
+    // public $animal;
+    
 
 
     function __construct($_category, $_animal, $_material, $_shape, $_price) {

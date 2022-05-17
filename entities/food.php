@@ -3,11 +3,12 @@
 
 
 class Food extends Product {
-    public $typeOfFood;
-    // public $animal;
+    public $typeOfFood; // secco o umido o altro
     public $ingredient;
     public $age;
-    public $price;
+    public $expireDate; // data di scadenza
+    // public $price;
+    // public $animal;
 
 
     function __construct($_category, $_typeOfFood, $_animal, $_price){

@@ -1,13 +1,15 @@
 <?php
-include __DIR__ . '/creditCard.php';
-class User{
+// include __DIR__ . '/creditCard.php';
 
+class User{
 
     public $name;
     public $surname;
+    public $address;
     private $userID;
-    public $registration = false;
+    private $registration = false;
     private $email;
+    public $phoneNumber;
     private $passwords;
     protected $sconto = 0;
     
